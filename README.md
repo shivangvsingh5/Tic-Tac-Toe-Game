@@ -1,4 +1,4 @@
-# Tic-Tac-Toe-Game
+# Tic Tac Toe Game
 
 I have created a **Tic-Tac-Toe Game**, using Python language and using **PyCharm IDE**. In this game, I have made the following provisions :
 
