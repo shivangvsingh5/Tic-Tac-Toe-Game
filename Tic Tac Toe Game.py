@@ -3,12 +3,12 @@ board = (' ')*10
 game_state = True
 announce = ''
 
-#For reseting the board
+# For reseting the board
 def reset_board, game_state
 board = (' ')*10
 game_state = True
 
-#Creating a function for makng the board
+# Creating a function for makng the board
 def display_board():
     # Clear any output cell
 clear_output()
@@ -20,7 +20,7 @@ print "  "+board(4)+ "  |  "+board(5)+ "  |  " +board(6)+ "  "
 print "--------------"
 print "  "+board(1)+ "  |  "+board(2)+ "  |  " +board(3)+ "  "
 
-#Defining a function for comparinf numbers for deciding Victory; will check horizontally
+# Defining a function for comparinf numbers for deciding Victory; will check horizontally
 def win_check(board,player):
     if  (board(7) == board(8) == board(9) == player) or \
         (board(4) == board(5) == board(6) == player) or \
@@ -41,7 +41,7 @@ def full_board_check(board):
 else:
     return True
 
-#Defining function to get players input
+# Defining function to get players input
 def ask_player(mark):
     "asks player where to put the symbols and checks validity"
     global board
@@ -63,7 +63,7 @@ def ask_player(mark):
                     print "Space is filled"
                     continue
 
-#Gives a game state as output with help of input of player
+# Gives a game state as output with help of input of player
 def player_choice(mark):
     global board,game_state,announce
 
@@ -92,7 +92,7 @@ def player_choice(mark):
 
             return game_state,announce
 
-#Merging everything al together
+# Merging everything al together
 def play_game():
     reset_board()
     global announce
@@ -105,7 +105,7 @@ def play_game():
 clear_output()
 display_board()
 
-#Player X chance
+# Player X chance
 game_state,announce = player_choice(X)
 print announce
 if game_state == False:
@@ -124,6 +124,6 @@ if game_state == False:
         else:
             print "Thanks for playing game"
 
-#Playing the game
+# Playing the game
 
 play_game()
