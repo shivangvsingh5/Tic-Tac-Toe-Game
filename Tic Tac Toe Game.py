@@ -20,7 +20,7 @@ print "  "+board(4)+ "  |  "+board(5)+ "  |  " +board(6)+ "  "
 print "--------------"
 print "  "+board(1)+ "  |  "+board(2)+ "  |  " +board(3)+ "  "
 
-# Defining a function for comparinf numbers for deciding Victory; will check horizontally
+# Defining a function for comparing numbers for deciding Victory; will check horizontally
 def win_check(board,player):
     if  (board(7) == board(8) == board(9) == player) or \
         (board(4) == board(5) == board(6) == player) or \
